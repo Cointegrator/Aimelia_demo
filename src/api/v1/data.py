@@ -18,3 +18,11 @@ async def get_event_by_condition_id(condition_id: str):
     """
     r = DataNode().get_event_by_condition_id(condition_id)
     return r
+
+@router.get('/event/{condition_id}/news')
+async def get_relevant_news(condition_id: str):
+    """
+    Get relevant news for the market.
+    """
+    r = DataNode().get_relevant_news(condition_id)
+    return r
