@@ -12,7 +12,8 @@ def get_api_key() -> ApiCreds:
     key = os.getenv('PK')
     chain_id = AMOY
     client = ClobClient(host, key=key, chain_id=chain_id)
-    creds = client.create_api_key()
+    # creds = client.create_api_key()
+    creds = client.derive_api_key()
     return creds
 
 def main():
