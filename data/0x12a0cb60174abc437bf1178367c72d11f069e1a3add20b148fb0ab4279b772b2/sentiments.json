@@ -1,0 +1,270 @@
+[
+  {
+    "news": "The HinduMoreDonald Trump notches a commanding win in the Iowa caucuses as Haley and DeSantis fight for second place16 Jan",
+    "sentiment": { "label": "POSITIVE", "score": 0.9986170530319214 }
+  },
+  {
+    "news": "Financial TimesMoreDonald Trump holds big lead in New Hampshire as Ron DeSantis falls behind21 JanAlex RogersBy Alex Rogers",
+    "sentiment": { "label": "POSITIVE", "score": 0.971771240234375 }
+  },
+  {
+    "news": "The Times of IndiaMoreIndian-American Vivek Ramaswamy only behind Donald Trump as Republican pick for 2024 US presidential poll20 Aug 2023",
+    "sentiment": { "label": "NEGATIVE", "score": 0.7643771171569824 }
+  },
+  {
+    "news": "Al Jazeera EnglishMoreUS Republican debate 2024 updates: Haley and DeSantis trade barbs in Iowa10 JanJoseph Stepansky and Jillian Kestler-D'AmoursBy Joseph Stepansky and Jillian Kestler-D'Amours",
+    "sentiment": { "label": "NEGATIVE", "score": 0.7830386161804199 }
+  },
+  {
+    "news": "ABC NewsMoreThe 2024 Republican presidential primary could be over in a month15 DecG. Elliott Morris and Elliott MorrisBy G. Elliott Morris and Elliott Morris",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9889743328094482 }
+  },
+  {
+    "news": "CBS NewsMoreRon DeSantis drops out of 2024 Republican presidential race, endorses Trump ahead of New Hampshire primary22 JanMajor Garrett, Robert Costa and Aaron NavarroBy Major Garrett, Robert Costa and Aaron Navarro",
+    "sentiment": { "label": "NEGATIVE", "score": 0.987896203994751 }
+  },
+  {
+    "news": "CNNMoreCNN Poll: Haley trims Trump\u2019s lead to single digits in New Hampshire9 JanAriel Edwards-LevyBy Ariel Edwards-Levy",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9003687500953674 }
+  },
+  {
+    "news": "ReutersMore2024 Republican candidates hone in on a common foe: China3 Aug 2023Gram Slattery, David Lawder and Michael MartinaBy Gram Slattery, David Lawder and Michael Martina",
+    "sentiment": { "label": "POSITIVE", "score": 0.9080685377120972 }
+  },
+  {
+    "news": "CNBCMoreRepublican debate key moments: Haley\u2019s \u2018scum\u2019 swipe, Christie\u2019s Warren Buffett shoutout8 Nov 2023Brian Schwartz, Kevin Breuninger and Amanda MaciasBy Brian Schwartz, Kevin Breuninger and Amanda Macias",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9223138093948364 }
+  },
+  {
+    "news": "The Associated PressMoreTrump wins New Hampshire primary: Live updates22 Jan",
+    "sentiment": { "label": "POSITIVE", "score": 0.9931625127792358 }
+  },
+  {
+    "news": "Yahoo! VoicesMore2024 election primaries: Biden, Trump delegate tracker and updated results13 Mar",
+    "sentiment": { "label": "NEGATIVE", "score": 0.8388783931732178 }
+  },
+  {
+    "news": "ReutersMoreWith Trump absent, Republican rivals trade attacks at first 2024 debate24 Aug 2023Nathan Layne and Joseph AxBy Nathan Layne and Joseph Ax",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9953733086585999 }
+  },
+  {
+    "news": "CNN InternationalMore2024 campaign news: GOP debate and Trump\u2019s final sprint to Iowa caucuses10 JanShania Shelton, Maureen Chowdhury and Tori B. PowellBy Shania Shelton, Maureen Chowdhury and Tori B. Powell",
+    "sentiment": { "label": "NEGATIVE", "score": 0.7735339403152466 }
+  },
+  {
+    "news": "CBS NewsMoreTrump maintains dominant lead among 2024 Republican candidates as GOP field narrows: CBS News poll6 Nov 2023Fred Backus, Anthony Salvanto and Kabir KhannaBy Fred Backus, Anthony Salvanto and Kabir Khanna",
+    "sentiment": { "label": "NEGATIVE", "score": 0.8966164588928223 }
+  },
+  {
+    "news": "The HinduMoreVivek Ramaswamy suspends his 2024 Republican presidential bid, endorses rival Donald Trump16 Jan",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9943336248397827 }
+  },
+  {
+    "news": "CNBCMoreRepublican debate recap: Christie, Pence and Haley pile on Ramaswamy24 Aug 2023Brian Schwartz, Emma Kinery and Kevin BreuningerBy Brian Schwartz, Emma Kinery and Kevin Breuninger",
+    "sentiment": { "label": "POSITIVE", "score": 0.696585476398468 }
+  },
+  {
+    "news": "ReutersMoreWhich candidates qualified for the second Republican 2024 debate?25 Sept 2023Costas Pitas, Ross Colvin and Tim ReidBy Costas Pitas, Ross Colvin and Tim Reid",
+    "sentiment": { "label": "NEGATIVE", "score": 0.931762158870697 }
+  },
+  {
+    "news": "ReutersMoreFirst Republican presidential debate highlights: Four takeaways24 Aug 2023James OliphantBy James Oliphant",
+    "sentiment": { "label": "POSITIVE", "score": 0.9599433541297913 }
+  },
+  {
+    "news": "ReutersMoreWith Trump way ahead in 2024 Republican polls, Iowa becomes do-or-die for DeSantis12 Jul 2023Gram Slattery, Alexandra Ulmer and James OliphantBy Gram Slattery, Alexandra Ulmer and James Oliphant",
+    "sentiment": { "label": "POSITIVE", "score": 0.9618554711341858 }
+  },
+  {
+    "news": "CNNMoreNew CNN poll shows Trump is in a league of his own as GOP primary hits fall sprint5 Sept 2023Stephen CollinsonBy Stephen Collinson",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9150289297103882 }
+  },
+  {
+    "news": "The New York TimesMoreTrump Crushing DeSantis and G.O.P. Rivals, Times/Siena Poll Finds31 Jul 2023Shane GoldmacherBy Shane Goldmacher",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9620499610900879 }
+  },
+  {
+    "news": "The Economic TimesMoreU.S. Presidential Election 2024: Poll says Donald Trump to sweep Republican primaries, DeSantis to win Flo7 Jul 2023",
+    "sentiment": { "label": "POSITIVE", "score": 0.9620870351791382 }
+  },
+  {
+    "news": "CNNMoreJanuary 17 - 2024 campaign updates17 JanJack Forrest and Aditi SangalBy Jack Forrest and Aditi Sangal",
+    "sentiment": { "label": "NEGATIVE", "score": 0.8466012477874756 }
+  },
+  {
+    "news": "The Economic TimesMoreWhat you need to know about the 2024 US presidential election14 Dec",
+    "sentiment": { "label": "POSITIVE", "score": 0.9141634702682495 }
+  },
+  {
+    "news": "The New York TimesMoreKoch Network Raises Over $70 Million for Push to Sink Trump29 Jun 2023Maggie Haberman, Shane Goldmacher and Jonathan SwanBy Maggie Haberman, Shane Goldmacher and Jonathan Swan",
+    "sentiment": { "label": "NEGATIVE", "score": 0.8926504850387573 }
+  },
+  {
+    "news": "FiveThirtyEightMoreWhat Are Trump's Chances Of Winning The GOP Primary?29 Aug 2023G. Elliott MorrisBy G. Elliott Morris",
+    "sentiment": { "label": "NEGATIVE", "score": 0.984735369682312 }
+  },
+  {
+    "news": "BloombergMoreWhere Trump, 2024 GOP Candidates Stand on Key Economic Issues Ahead of Debate2 Aug 2023Ryan Teague BeckwithBy Ryan Teague Beckwith",
+    "sentiment": { "label": "POSITIVE", "score": 0.953183114528656 }
+  },
+  {
+    "news": "CNNMoreLive updates: The latest on the Iowa caucuses and 2024 primary campaign15 JanIsabelle D'Antonio, Amir Vera and Elise HammondBy Isabelle D'Antonio, Amir Vera and Elise Hammond",
+    "sentiment": { "label": "POSITIVE", "score": 0.9818395972251892 }
+  },
+  {
+    "news": "Financial TimesMoreNikki Haley and Ron DeSantis running out of time to stop Donald Trump16 JanLauren Fedor and James PolitiBy Lauren Fedor and James Politi",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9896396398544312 }
+  },
+  {
+    "news": "Morning Consult ProMore2024 Republican Primary Polls | Morning Consult20 May 2023Eli YokleyBy Eli Yokley",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9645419716835022 }
+  },
+  {
+    "news": "ReutersMoreIn 2024, Republican EV attacks may fall short as swing states reap investment27 Nov 2023Gram Slattery and Nichola GroomBy Gram Slattery and Nichola Groom",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9981828331947327 }
+  },
+  {
+    "news": "The Associated PressMoreHow Donald Trump became the GOP's front-runner4 FebJill ColvinBy Jill Colvin",
+    "sentiment": { "label": "POSITIVE", "score": 0.8652365803718567 }
+  },
+  {
+    "news": "CNNMoreChris Christie skewers Haley and DeSantis on hot mic before ending 2024 campaign10 JanGregory Krieg, Jeff Zeleny and David ChalianBy Gregory Krieg, Jeff Zeleny and David Chalian",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9479459524154663 }
+  },
+  {
+    "news": "The EconomistMoreDonald Trump is very likely to be the Republican nominee25 May 2023",
+    "sentiment": { "label": "POSITIVE", "score": 0.9266282320022583 }
+  },
+  {
+    "news": "CNNMoreHow one DeSantis speech captured the dynamic that could decide 20246 Jun 2023Ronald BrownsteinBy Ronald Brownstein",
+    "sentiment": { "label": "POSITIVE", "score": 0.704897940158844 }
+  },
+  {
+    "news": "Al Jazeera EnglishMoreNew Hampshire primary: Haley and the anti-Trump movement\u2019s last best hope19 JanJoseph StepanskyBy Joseph Stepansky",
+    "sentiment": { "label": "NEGATIVE", "score": 0.5070362091064453 }
+  },
+  {
+    "news": "BloombergMoreHaley 'Absolutely' Could Win New Hampshire, GOP Chairman Says20 JanGregory Korte and Christian HallBy Gregory Korte and Christian Hall",
+    "sentiment": { "label": "POSITIVE", "score": 0.9993427395820618 }
+  },
+  {
+    "news": "BBC.comMoreRon DeSantis thinks his feud with Disney will pay off. Here's why23 May 2023Anthony ZurcherBy Anthony Zurcher",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9877492785453796 }
+  },
+  {
+    "news": "The New York TimesMoreHow Much Money the 2024 Presidential Candidates Have Raised So Far1 Aug 2023Molly Cook Escobar, Charlie Smart and Rachel ShoreyBy Molly Cook Escobar, Charlie Smart and Rachel Shorey",
+    "sentiment": { "label": "POSITIVE", "score": 0.6107348203659058 }
+  },
+  {
+    "news": "CNNMoreTakeaways from the first Republican presidential primary debate23 Aug 2023Eric Bradner, Steve Contorno and Arit JohnBy Eric Bradner, Steve Contorno and Arit John",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9738575220108032 }
+  },
+  {
+    "news": "ReutersMore2024 Republican hopefuls rebuke Justice Department, not Trump after indictment9 Jun 2023Nathan LayneBy Nathan Layne",
+    "sentiment": { "label": "NEGATIVE", "score": 0.8667029142379761 }
+  },
+  {
+    "news": "Reuters CanadaMoreMexican president urges Latino voters to reject DeSantis after campaign launch25 May 2023",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9875003099441528 }
+  },
+  {
+    "news": "CNNMoreCan any Republican beat Trump or DeSantis in 2024?5 Feb 2023Harry EntenBy Harry Enten",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9821203351020813 }
+  },
+  {
+    "news": "CNNMoreTrump\u2019s landslide Iowa win is a stunning show of strength after leaving Washington in disgrace16 JanStephen CollinsonBy Stephen Collinson",
+    "sentiment": { "label": "POSITIVE", "score": 0.9996169805526733 }
+  },
+  {
+    "news": "The Associated PressMoreIowa caucus 2024 live updates: Trump wins, DeSantis finishes second15 Jan",
+    "sentiment": { "label": "POSITIVE", "score": 0.9832502007484436 }
+  },
+  {
+    "news": "ReutersMoreThe Trump voters in swing states who are returning to the fold13 JanNathan Layne, Tim Reid and James OliphantBy Nathan Layne, Tim Reid and James Oliphant",
+    "sentiment": { "label": "POSITIVE", "score": 0.8783921599388123 }
+  },
+  {
+    "news": "The New York TimesMoreTrump Likely to Sit Out One or Both of First Two G.O.P. Debates (Published 2023)2 May 2023Maggie Haberman and Jonathan SwanBy Maggie Haberman and Jonathan Swan",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9459421038627625 }
+  },
+  {
+    "news": "Spectrum News NY1MoreDeSantis drops out of 2024 Republican presidential primary, endorses Trump21 JanJoseph KonigBy Joseph Konig",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9976416826248169 }
+  },
+  {
+    "news": "CNNMoreTrump escalates attacks on Haley as he seeks New Hampshire knockout18 JanEric Bradner and Kristen HolmesBy Eric Bradner and Kristen Holmes",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9655517935752869 }
+  },
+  {
+    "news": "The New York TimesMoreThe 2024 DeSantis Campaign Faltered Before it Even Started. What Now?13 May 2023Maggie Haberman, Shane Goldmacher and Jonathan SwanBy Maggie Haberman, Shane Goldmacher and Jonathan Swan",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9993367791175842 }
+  },
+  {
+    "news": "The WeekMoreWhy is Mike Pence running against Trump for president in 2024?7 Jun 2023Harold MaassBy Harold Maass",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9895143508911133 }
+  },
+  {
+    "news": "The Associated PressMoreDeSantis presidential campaign is cutting staff as new financial pressure emerges16 Jul 2023Steve PeoplesBy Steve Peoples",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9991909861564636 }
+  },
+  {
+    "news": "CoversMore2024 Republican Party Presidential Nominee Odds: Trump a lock8 Nov 2023Rohit PonnaiyaBy Rohit Ponnaiya",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9425489902496338 }
+  },
+  {
+    "news": "CNNMoreSuper Tuesday may underline Trump\u2019s transformation of the GOP5 MarRon BrownsteinBy Ron Brownstein",
+    "sentiment": { "label": "NEGATIVE", "score": 0.6276834607124329 }
+  },
+  {
+    "news": "CBS NewsMoreGovernors Ron DeSantis, Gavin Newsom face off in unusual debate1 DecAaron NavarroBy Aaron Navarro",
+    "sentiment": { "label": "NEGATIVE", "score": 0.7153929471969604 }
+  },
+  {
+    "news": "Yahoo News UKMoreSuper Tuesday 2024 \u2013 live: Trump gets green light to run for president before biggest day in primary calendar5 MarOliver O'connell, Joe Sommerlad and Mike BediganBy Oliver O'connell, Joe Sommerlad and Mike Bedigan",
+    "sentiment": { "label": "POSITIVE", "score": 0.9295773506164551 }
+  },
+  {
+    "news": "The HillMoreRanking the 2024 Republican presidential candidates22 Nov 2023Niall StanageBy Niall Stanage",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9305707812309265 }
+  },
+  {
+    "news": "CBS NewsMoreWith 4 months left until the caucus, Ron DeSantis is betting big on Iowa7 Sept 2023Aaron NavarroBy Aaron Navarro",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9833239912986755 }
+  },
+  {
+    "news": "CNNMoreKoch network plans to back a Republican \u2013 other than Donald Trump \u2013 in the 2024 presidential primary5 Feb 2023Fredreka SchoutenBy Fredreka Schouten",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9551921486854553 }
+  },
+  {
+    "news": "POLITICOMoreHow DeSantis collapsed in the glare of a presidential campaign21 JanGary Fineout, Sally Goldenberg and Kimberly LeonardBy Gary Fineout, Sally Goldenberg and Kimberly Leonard",
+    "sentiment": { "label": "NEGATIVE", "score": 0.99968421459198 }
+  },
+  {
+    "news": "POLITICOMoreHow the Pros Think the Iowa Caucuses Will Shake Out12 JanCharles MahtesianBy Charles Mahtesian",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9880461692810059 }
+  },
+  {
+    "news": "Iowa City Press-CitizenMoreIowa Caucus: Nikki Haley narrowly defeats Trump in Johnson County15 JanRyan HansenBy Ryan Hansen",
+    "sentiment": { "label": "POSITIVE", "score": 0.6678748726844788 }
+  },
+  {
+    "news": "The IndependentMoreIowa entrance polls show MAGA fans turned out for caucus: Live updates5 MarOliver O'connellBy Oliver O'connell",
+    "sentiment": { "label": "NEGATIVE", "score": 0.93049556016922 }
+  },
+  {
+    "news": "CNNMoreMany Republicans may run for president. Most don\u2019t stand a chance14 Feb 2023Zach WolfBy Zach Wolf",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9894372224807739 }
+  },
+  {
+    "news": "CNNMoreThe chance of Trump winning another term is very real30 Jul 2023Harry EntenBy Harry Enten",
+    "sentiment": { "label": "POSITIVE", "score": 0.5986686944961548 }
+  },
+  {
+    "news": "Common DreamsMoreIn Dead of Night, Ron DeSantis Signs Near-Total Abortion Ban Into Law13 Apr 2023Brett WilkinsBy Brett Wilkins",
+    "sentiment": { "label": "NEGATIVE", "score": 0.9887242913246155 }
+  },
+  {
+    "news": "CNBCMoreNew Hampshire primary results: Trump wins Republican primary as Haley donors fret over next steps24 JanKevin Breuninger, Ryan Anastasio and Rebecca PicciottoBy Kevin Breuninger, Ryan Anastasio and Rebecca Picciotto",
+    "sentiment": { "label": "POSITIVE", "score": 0.9891112446784973 }
+  }
+]
