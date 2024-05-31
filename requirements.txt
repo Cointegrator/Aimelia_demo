@@ -5,3 +5,4 @@ fastapi
 python-dotenv
 uvicorn
 transformers
+pydantic
