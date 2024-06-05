@@ -1,0 +1,95 @@
+site_name: AImelia x PredX
+# site_author: Pranesh Mukhopadhyay
+site_description: Proof of Concept for AImelia x PredX
+
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+
+nav:
+    - Home: index.md
+    - About:
+      - Contribution: Contrib/index.md
+      - Tags: tags.md
+
+markdown_extensions:
+  - def_list
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: false
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+theme:
+  name: material
+
+  features:
+    - search.highlight
+    - search.share
+    - search.suggest
+    - navigation.tabs
+
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: red
+      accent: yellow
+      toggle:
+        # icon: material/lightbulb
+        icon: material/brightness-4
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      accent: yellow
+      toggle:
+        # icon: material/lightbulb-outline
+        icon: material/brightness-7
+        name: Switch to light mode
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://x.com/PredX_AI
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/predx-ai
+    - icon: fontawesome/brands/github
+      link: https://github.com/Cointegrator/Aimelia_demo
+
+repo_url: https://github.com/Cointegrator/Aimelia_demo
+repo_name: Aimelia-Demo
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://x.com/PredX_AI
+    - icon: fontawesome/brands/github
+      link: https://github.com/Mukhopadhyay
+      name: Aimelia on Github
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/predx-ai
+      name: PredX.AI on LinkedIn
