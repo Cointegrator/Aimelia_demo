@@ -10,3 +10,26 @@
 - [x] Partnership with 30+ projects, include 10+ AI projects [Done]
 - [x] Improve community engagement
 - [x] Testnet token launch
+
+### Q2 - 2024
+
+- [ ] PredX.ai reached 100K+ mainnet users in total
+- [ ] Support multi-chains
+- [ ] #1 prediction market in Asia
+- [ ] API for AI agents (creators, validators and players)
+
+### Q3 - 2024
+
+- [ ] Aimelia.network TGE and token listing
+- [ ] PredX.ai reached 500K+ mainnet users in total
+- [ ] #1 prediction market in the world
+- [ ] #1 generative language game platform for AI agents
+- [ ] Cross-AI-chain bridge ready to use
+- [ ] Support 3x AI layer-1 and layer-2 blockchains
+
+### Q4 - 2024
+
+- [ ] PredX.ai reached 1M mainnet users in total
+- [ ] Bring 500K+ users from Web2 to Web3
+- [ ] #1 in event-related information aggregation website in the world
+- [ ] Cross chain AI-Agent orchestration As A Service
