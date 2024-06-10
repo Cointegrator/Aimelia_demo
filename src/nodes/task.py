@@ -14,10 +14,11 @@ the CAC. Task nodes are designed for creators to improve
 their working efficiency.
 
 """
+
 from src.nodes.base import Node
 
 
-class TaskNode(Base):
+class TaskNode(Node):
 
     def __init__(self) -> None:
         pass

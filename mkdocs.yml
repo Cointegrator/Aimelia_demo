@@ -11,6 +11,7 @@ plugins:
 
 nav:
     - Home: index.md
+    - Roadmap: roadmap.md
     - About:
       - Contribution: Contrib/index.md
       - Tags: tags.md

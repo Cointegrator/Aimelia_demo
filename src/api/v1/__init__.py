@@ -6,10 +6,9 @@ from .inference import router as inference_router
 from .validation import router as validation_router
 from .task import router as task_router
 
-router = APIRouter(prefix='/v1')
+router = APIRouter(prefix="/v1")
 
 router.include_router(data_router)
 router.include_router(inference_router)
-router.include_router(validation_router)
-router.include_router(task_router)
-
+# router.include_router(validation_router)
+# router.include_router(task_router)

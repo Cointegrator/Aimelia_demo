@@ -1,5 +1,6 @@
 """
 Inference Node
+~~~~~~~~~~~~~~~
 
 Players employ inference nodes to make decisions. They can deposit
 the money to the inference nodes and delegate the work entirely

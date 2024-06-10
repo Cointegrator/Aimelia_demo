@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     working_dir: /src
     ports:
-      - 8000:8000
+      - 9000:8000
     volumes:
       - ./src:/src
     networks:

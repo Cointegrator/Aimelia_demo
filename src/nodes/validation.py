@@ -16,7 +16,9 @@ the results in the network. The reward is distributed
 if there is a high discrepancy between the claimed results
 and the results verified by validators.
 """
+
 from src.nodes.base import Node
+
 
 class ValidationNode(Node):
 
