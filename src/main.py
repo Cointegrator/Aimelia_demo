@@ -42,7 +42,6 @@ def custom_openapi():
         title="PredX x Aimelia",
         version="0.0.1",
         summary="PredX x Aimelia Proof of Concept",
-        # description="**Aimelia** is a decentralized AI platform that enables users to create, share, and monetize AI models. PredX is a prediction market platform that allows users to create, share, and monetize prediction markets. This project is a proof of concept that combines the two platforms to create a decentralized prediction market platform that leverages AI models to make better predictions.",
         description=description,
         routes=app.routes,
     )
