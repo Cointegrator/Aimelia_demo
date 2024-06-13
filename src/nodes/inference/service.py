@@ -14,13 +14,12 @@ decision-making processes. Inference nodes are for
 players to make better decisions.
 """
 
-import requests
-from typing import Optional, Any
-import configs
-import utility
+from config import configs
+from nodes.base import Node
+from utils import utility
 
-# from inference.nodes.base import Node
-# from inference.nodes.data import DataNode
+# TODO: Replace this usage of DataNode with the actual DataNode
+from nodes.data.service import DataNode
 
 import os
 import json
@@ -36,24 +35,6 @@ from transformers import pipeline
 from pydantic import BaseModel
 
 load_dotenv()
-
-
-class Node:
-    """
-    Base node for the project.
-    Every other node in the architecture will inherit from this class.
-    """
-
-    def __init__(self) -> None:
-        pass
-
-    def get(self, url, headers: Optional[dict] = None) -> None:
-        return requests.get(url, headers=headers)
-
-    def post(
-        self, url: str, headers: Optional[dict] = None, data: Optional[Any] = None
-    ) -> None:
-        return requests.post(url, headers=headers, data=data)
 
 
 class Verdict(BaseModel):

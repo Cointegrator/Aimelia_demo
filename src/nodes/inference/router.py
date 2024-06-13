@@ -1,6 +1,6 @@
-from fastapi import APIRouter, FastAPI
+from fastapi import APIRouter
 
-from service import InferenceNode
+from nodes.inference.service import InferenceNode
 
 router = APIRouter(prefix="/inference", tags=["Inference Node"])
 
@@ -37,7 +37,3 @@ async def infer_and_participate(condition_id: str):
     ```
     """
     return InferenceNode().infer_and_participate(condition_id=condition_id)
-
-
-app = FastAPI()
-app.include_router(router)

@@ -1,5 +1,5 @@
-from fastapi import APIRouter, FastAPI
-from service import DataNode
+from fastapi import APIRouter
+from src.nodes.data.service import DataNode
 
 router = APIRouter(prefix="/data", tags=["Data Node"])
 
@@ -29,7 +29,3 @@ async def get_relevant_news(condition_id: str):
     """
     r = DataNode().get_relevant_news(condition_id)
     return r
-
-
-app = FastAPI()
-app.include_router(router)

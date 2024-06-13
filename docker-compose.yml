@@ -1,25 +1,25 @@
 version: "3.3"
 services:
-  aimelia-data:
-    build:
-      context: .
-      dockerfile: ./multinode/data/Dockerfile
-    working_dir: /dataNode
-    ports:
-      - 8000:8000
-    volumes:
-      - ./multinode/data:/nodeNode/
-    networks:
-      - default
+  # aimelia-data:
+  #   build:
+  #     context: .
+  #     dockerfile: ./multinode/data/Dockerfile
+  #   working_dir: /dataNode
+  #   ports:
+  #     - 8000:8000
+  #   volumes:
+  #     - ./multinode/data:/nodeNode/
+  #   networks:
+  #     - default
 
   aimelia-inference:
     build:
       context: .
-      dockerfile: ./multinode/inference/Dockerfile
-    working_dir: /inferenceNode
+      dockerfile: ./src/nodes/inference/Dockerfile
+    working_dir: /src
     ports:
       - 8001:8001
     volumes:
-      - ./multinode/inference:/inferenceNode/
+      - ./src:/src
     networks:
       - default
