@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from src.nodes.data.service import DataNode
+from nodes.data.service import DataNode
 
 router = APIRouter(prefix="/data", tags=["Data Node"])
 
