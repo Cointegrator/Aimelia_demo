@@ -6,13 +6,14 @@ ENV ACCEPT_EULA=Y
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-WORKDIR /aimelia
-COPY ./requirements.txt /requirements.txt
-COPY ./src /src
+WORKDIR /inferenceNode
+COPY ./requirements.txt ./requirements.txt
+COPY ./multinode/inference .
 
-EXPOSE 8000
+EXPOSE 8001
 
 RUN pip install -r requirements.txt
 
 # Debug mode, reloads the server when a file changes
-CMD ["uvicorn", "src.main:app", "--reload"]
+CMD ["uvicorn", "app:app", "--reload", "--port", "8001", "--host", "0.0.0.0"]
+
