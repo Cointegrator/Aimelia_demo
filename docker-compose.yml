@@ -12,6 +12,18 @@ services:
   #   networks:
   #     - default
 
+  documentation:
+    build:
+      context: .
+      dockerfile: ./docs/Dockerfile
+    working_dir: /
+    ports:
+      - 3000:3000
+    volumes:
+      - ./docs:/docs
+    networks:
+      - default
+
   aimelia-data:
     build:
       context: .
