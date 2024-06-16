@@ -1,0 +1,10 @@
+py-clob-client
+requests
+beautifulsoup4
+fastapi
+python-dotenv
+uvicorn
+transformers
+pydantic
+uvicorn==0.15.0
+torch

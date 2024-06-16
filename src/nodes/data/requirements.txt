@@ -1,0 +1,7 @@
+py-clob-client
+requests
+beautifulsoup4
+fastapi
+python-dotenv
+pydantic
+uvicorn==0.15.0
