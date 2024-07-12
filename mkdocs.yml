@@ -9,6 +9,8 @@ plugins:
 
 nav:
   - Home: index.md
+  - Getting started:
+      - Polymarket: GettingStarted/polymarket.md
   - Architecture: architecture.md
   - Roadmap: roadmap.md
   - Join Us: join-us.md
