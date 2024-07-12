@@ -14,10 +14,12 @@ decision-making processes. Inference nodes are for
 players to make better decisions.
 """
 
-from src.config import configs
-from src.nodes.base import Node
-from src.nodes.data import DataNode
-from src.utils import utility
+from config import configs
+from nodes.base import Node
+from utils import utility
+
+# TODO: Replace this usage of DataNode with the actual DataNode
+from nodes.data.service import DataNode
 
 import os
 import json

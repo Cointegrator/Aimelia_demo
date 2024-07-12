@@ -1,5 +1,7 @@
 # Data dir
-data/
+src/data/
+
+notes.md
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

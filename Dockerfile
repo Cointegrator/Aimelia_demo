@@ -6,6 +6,7 @@ ENV ACCEPT_EULA=Y
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
+WORKDIR /aimelia
 COPY ./requirements.txt /requirements.txt
 COPY ./src /src
 

@@ -21,9 +21,9 @@ from typing import Optional, List
 import requests
 from bs4 import BeautifulSoup
 
-from src.nodes.base import Node
-from src.config import configs
-from src.utils import utility
+from nodes.base import Node
+from config import configs
+from utils import utility
 
 
 class DataNode(Node):

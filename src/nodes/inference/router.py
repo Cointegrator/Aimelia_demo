@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from src.nodes.inference import InferenceNode
+from nodes.inference.service import InferenceNode
 
 router = APIRouter(prefix="/inference", tags=["Inference Node"])
 
