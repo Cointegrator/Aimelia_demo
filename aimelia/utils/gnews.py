@@ -39,7 +39,7 @@ def get_decoded_image_url(url: str) -> str:
     try:
         r = requests.get(url)
     except Exception:
-        return None
+        return 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
     else:
         return r.url
 
@@ -73,6 +73,9 @@ def parse_markup(
     n: Optional[int] = None,
     fetch_content: Optional[bool] = False,
 ):
+    if not n:
+        n = 20
+        
     soup = BeautifulSoup(markup, 'html.parser')
     anchors = soup.find_all("a")
 

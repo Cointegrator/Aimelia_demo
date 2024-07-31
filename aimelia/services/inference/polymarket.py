@@ -27,6 +27,19 @@ class PolymarketInferenceService(BaseInferenceService):
         else:
             return x
 
+    def generate(self, event_id: str, question: str, news, llm, save: Optional[bool] = True):
+        local_path = f"./db/verdict-{event_id}.json"
+
+        verdict = llm.get_verdict(question, news)
+        verdict = self.post_process_verdict(verdict, question, news)
+        if save:
+            try:
+                with open(local_path, "w") as fp:
+                    json.dump(verdict.dict(), fp)
+            except Exception:
+                pass
+        return verdict
+
     def get_inference(
         self,
         event_id: str,
@@ -43,24 +56,30 @@ class PolymarketInferenceService(BaseInferenceService):
         print("News from inference node", news)
 
         if force:
-            verdict = llm.get_verdict(question, news)
-            verdict = self.post_process_verdict(verdict, question, news)
-            try:
-                with open(local_path, "w") as fp:
-                    json.dump(verdict.dict(), fp)
-            except Exception:
-                pass
+            verdict = self.generate(event_id, question, news, llm)
+            # verdict = llm.get_verdict(question, news)
+            # verdict = self.post_process_verdict(verdict, question, news)
+            # try:
+            #     with open(local_path, "w") as fp:
+            #         json.dump(verdict.dict(), fp)
+            # except Exception:
+            #     pass
         else:
             if os.path.exists(local_path):
-                with open(local_path, "r") as fp:
-                    verdict = json.load(fp)
-            else:
-                verdict = llm.get_verdict(question, news)
-                verdict = self.post_process_verdict(verdict, question, news)
                 try:
-                    with open(local_path, "w") as fp:
-                        json.dump(verdict.dict(), fp)
+                   with open(local_path, "r") as fp:
+                        verdict = json.load(fp)
                 except Exception:
-                    pass
+                    # If problem loading file then generate
+                    verdict = self.generate(event_id, question, news, llm)
+            else:
+                verdict = self.generate(event_id, question, news, llm)
+                # verdict = llm.get_verdict(question, news)
+                # verdict = self.post_process_verdict(verdict, question, news)
+                # try:
+                #     with open(local_path, "w") as fp:
+                #         json.dump(verdict.dict(), fp)
+                # except Exception:
+                #     pass
 
         return verdict
