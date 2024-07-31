@@ -1,0 +1,5 @@
+from utils.gnews import get_decoded_source_url
+
+string = "./articles/CBMiRmh0dHBzOi8vdGhlaGlsbC5jb20vb3Bpbmlvbi9jYW1wYWlnbi80NzkzNDk0LWZsb3JpZGEtbWVuLXBvd2VyLWh1bmdyeS_SAUpodHRwczovL3RoZWhpbGwuY29tL29waW5pb24vY2FtcGFpZ24vNDc5MzQ5NC1mbG9yaWRhLW1lbi1wb3dlci1odW5ncnkvYW1wLw?hl=en-US&gl=US&ceid=US%3Aen"
+x = get_decoded_source_url(string)
+print(x)

@@ -1,7 +1,6 @@
-# Data dir
-src/data/
-
-notes.md
+llm.py
+*.db
+aimelia/db/*.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
