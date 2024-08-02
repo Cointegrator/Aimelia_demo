@@ -25,7 +25,7 @@ def fetch_news_content(url: str) -> None:
 
 
 def get_decoded_source_url(url: str) -> str:
-    encoded_string = url.split("/articles/")[-1].split("?")[0]
+    encoded_string = url.split("read/")[-1].split("?")[0]
     encoded_string = encoded_string[4:] + "=="
 
     decoded_string = base64.b64decode(encoded_string)
@@ -73,6 +73,7 @@ def parse_markup(
     n: Optional[int] = None,
     fetch_content: Optional[bool] = False,
 ):
+    print("Fetch content:", fetch_content)
     if not n:
         n = 20
 
@@ -147,7 +148,8 @@ def parse_markup(
                 if verbose:
                     print("\tAttempting to fetch content...")
                 content = fetch_news_content(decoded_url)
-            except Exception:
+            except Exception as err:
+                print("Exception while reading content", err)
                 if verbose:
                     print("\tFailed to fetch content...")
 
