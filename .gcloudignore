@@ -1,0 +1,7 @@
+.gitignore
+.gcloudignore
+.git
+README.md
+__pycache__/
+.DS_Store
+.idea/
