@@ -1,3 +1,7 @@
+# Build details
+configuration.py
+deploy.sh
+
 llm.py
 *.db
 aimelia/db/*.json
