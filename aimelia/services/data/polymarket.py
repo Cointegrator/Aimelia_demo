@@ -33,6 +33,7 @@ class PolymarketDataService(BaseDataService):
 
         if force:
             news = gnews.get_news(question, fetch_content=fetch_content, n=n)
+            print("News (force): ", news)
             with open(local_path, "w") as fp:
                 json.dump(news, fp)
 

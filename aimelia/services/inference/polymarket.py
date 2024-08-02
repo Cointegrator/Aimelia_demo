@@ -27,7 +27,9 @@ class PolymarketInferenceService(BaseInferenceService):
         else:
             return x
 
-    def generate(self, event_id: str, question: str, news, llm, save: Optional[bool] = True):
+    def generate(
+        self, event_id: str, question: str, news, llm, save: Optional[bool] = True
+    ):
         local_path = f"./db/verdict-{event_id}.json"
 
         verdict = llm.get_verdict(question, news)
@@ -48,7 +50,8 @@ class PolymarketInferenceService(BaseInferenceService):
     ) -> None:
         try:
             from utils import llm
-        except Exception:
+        except Exception as err:
+            print("Exception:", err)
             return {"message": "Inference engine not found!"}
 
         local_path = f"./db/verdict-{event_id}.json"
@@ -67,7 +70,7 @@ class PolymarketInferenceService(BaseInferenceService):
         else:
             if os.path.exists(local_path):
                 try:
-                   with open(local_path, "r") as fp:
+                    with open(local_path, "r") as fp:
                         verdict = json.load(fp)
                 except Exception:
                     # If problem loading file then generate

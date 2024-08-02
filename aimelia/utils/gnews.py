@@ -39,7 +39,7 @@ def get_decoded_image_url(url: str) -> str:
     try:
         r = requests.get(url)
     except Exception:
-        return 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
+        return "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
     else:
         return r.url
 
@@ -75,8 +75,8 @@ def parse_markup(
 ):
     if not n:
         n = 20
-        
-    soup = BeautifulSoup(markup, 'html.parser')
+
+    soup = BeautifulSoup(markup, "html.parser")
     anchors = soup.find_all("a")
 
     data = []
@@ -89,7 +89,7 @@ def parse_markup(
         except Exception:
             continue
 
-        if not href.startswith("./articles"):
+        if not href.startswith("./read"):
             continue
 
         if not anchor.text:
@@ -174,11 +174,14 @@ def parse_markup(
 
 def get_news(
     keyword: str,
-    verbose: Optional[bool] = False,
+    verbose: Optional[bool] = True,
     n: Optional[int] = None,
     fetch_content: Optional[bool] = False,
 ):
+    print("Keyword:", keyword)
     url = get_google_news_url(keyword=keyword)
+    if verbose:
+        print("URL:", url)
     markup = requests.get(url).text
     data = parse_markup(markup, verbose=verbose, n=n, fetch_content=fetch_content)
     return data
