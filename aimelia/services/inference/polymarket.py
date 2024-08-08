@@ -11,9 +11,11 @@ class PolymarketInferenceService(BaseInferenceService):
         pass
 
     @staticmethod
-    def get_news_by_id(event_id: str, question: str, force: Optional[bool] = False):
+    def get_news_by_id(
+        event_id: str, question: str, driver, force: Optional[bool] = False
+    ):
         service = PolymarketDataService()
-        news = service.get_news_by_event_id(event_id, question, force=force)
+        news = service.get_news_by_event_id(event_id, question, driver, force=force)
         return news
 
     @staticmethod
@@ -46,6 +48,7 @@ class PolymarketInferenceService(BaseInferenceService):
         self,
         event_id: str,
         question: str,
+        driver,
         force: Optional[bool] = False,
     ) -> None:
         try:
@@ -55,7 +58,7 @@ class PolymarketInferenceService(BaseInferenceService):
             return {"message": "Inference engine not found!"}
 
         local_path = f"./db/verdict-{event_id}.json"
-        news = self.get_news_by_id(event_id, question)
+        news = self.get_news_by_id(event_id, question, driver)
         print("News from inference node", news)
 
         if force:

@@ -1,10 +1,16 @@
 from datetime import datetime
 
+import time
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
 import json
 import base64
 import requests
 from urllib import parse
 from bs4 import BeautifulSoup
+from selenium import webdriver
+
 
 from typing import Optional
 
@@ -21,12 +27,44 @@ def fetch_news_content(url: str) -> None:
     if not content:
         return None
     else:
-        return "".join([str(elem).strip() for elem in content])
+        return " ".join([str(elem).strip() for elem in content])
+
+
+def fetch_news_content_v2(driver, url: str) -> None:
+    markup = None
+    try:
+        driver.get(url)
+        # Wait till html is loaded
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.TAG_NAME, "html"))
+        )
+        time.sleep(2)
+        driver_uri = driver.current_url
+        if not driver_uri.startswith("https://news.google.com"):
+            print("Driver URI", driver_uri)
+            markup = driver.page_source
+    except Exception as err:
+        print("Exception while fetching content v2", err)
+    else:
+        if not markup:
+            print("[INFO] No markup found!")
+            return None
+        else:
+            print("Markup found!")
+            soup = BeautifulSoup(markup, "html.parser")
+            paragraphs = soup.find_all("p")
+            content = []
+            for paragraph in paragraphs:
+                content.append(paragraph.text)
+            text = " ".join([str(elem).strip() for elem in content])
+            print(f"Text extracted: {text[:200]}...")
+            return text
 
 
 def get_decoded_source_url(url: str) -> str:
     encoded_string = url.split("read/")[-1].split("?")[0]
-    encoded_string = encoded_string[4:] + "=="
+    encoded_string = encoded_string + "=="
+    # encoded_string = encoded_string[4:] + "=="
 
     decoded_string = base64.b64decode(encoded_string)
     string = decoded_string.decode(json.detect_encoding(decoded_string), "ignore")
@@ -69,13 +107,14 @@ def fetch_markup(url: str):
 
 def parse_markup(
     markup: str,
+    driver: webdriver.Chrome,
     verbose: Optional[bool] = False,
     n: Optional[int] = None,
     fetch_content: Optional[bool] = False,
 ):
     print("Fetch content:", fetch_content)
     if not n:
-        n = 20
+        n = 10
 
     soup = BeautifulSoup(markup, "html.parser")
     anchors = soup.find_all("a")
@@ -84,10 +123,10 @@ def parse_markup(
     count = 0
 
     for anchor in anchors:
-
         try:
             href = anchor["href"]
-        except Exception:
+        except Exception as err:
+            print("Exception while fetching href", err)
             continue
 
         if not href.startswith("./read"):
@@ -100,24 +139,26 @@ def parse_markup(
         try:
             thumb = main.find("figure").find("img")["src"]
             thumb = get_google_url(thumb)
-        except Exception:
+        except Exception as err:
             thumb = None
+            print("Exception while fetching thumb", err)
 
         # Publisher
         # main = anchor.parent.parent.parent
         second_div = main.find_all("div")[1]
         try:
             publisher = second_div.find("div").find("div").find("div").find("div").text
-        except Exception:
+        except Exception as err:
             publisher = None
+            print("Exception while fetching publisher", err)
 
         # Published at
         try:
             x = main.parent
             published_at = x.find("time")["datetime"]
-        except Exception:
+        except Exception as err:
             published_at = None
-            continue
+            print("Exception while fetching published_at", err)
         else:
             if published_at:
                 # If published_at is greater than today then only keep
@@ -127,14 +168,15 @@ def parse_markup(
 
         # URL
         try:
-            url = get_google_url(href)
-        except Exception:
-            continue
+            url = f"https://news.google.com{href[1:]}"
+        except Exception as err:
+            print("Exception while fetching url", err)
 
         # Decoded url
         try:
             decoded_url = get_decoded_source_url(href)
-        except Exception:
+        except Exception as err:
+            print("Exception while fetching decoded_url", err)
             continue
 
         if verbose:
@@ -147,11 +189,15 @@ def parse_markup(
             try:
                 if verbose:
                     print("\tAttempting to fetch content...")
-                content = fetch_news_content(decoded_url)
+                # content = fetch_news_content(decoded_url)
+                content = fetch_news_content_v2(driver, url)
             except Exception as err:
                 print("Exception while reading content", err)
                 if verbose:
                     print("\tFailed to fetch content...")
+            else:
+                if content:
+                    print(f"Content fetched: {content[:200]}...")
 
         data.append(
             {
@@ -176,6 +222,7 @@ def parse_markup(
 
 def get_news(
     keyword: str,
+    driver: webdriver.Chrome,
     verbose: Optional[bool] = True,
     n: Optional[int] = None,
     fetch_content: Optional[bool] = False,
@@ -185,5 +232,7 @@ def get_news(
     if verbose:
         print("URL:", url)
     markup = requests.get(url).text
-    data = parse_markup(markup, verbose=verbose, n=n, fetch_content=fetch_content)
+    data = parse_markup(
+        markup, driver=driver, verbose=verbose, n=n, fetch_content=fetch_content
+    )
     return data

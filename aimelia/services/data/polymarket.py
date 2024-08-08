@@ -4,6 +4,7 @@ from configs import config
 from services.data.base import BaseDataService
 from utils import gnews
 from typing import Optional
+from selenium import webdriver
 
 
 class PolymarketDataService(BaseDataService):
@@ -24,6 +25,7 @@ class PolymarketDataService(BaseDataService):
         self,
         event_id: str,
         question: str,
+        driver: webdriver.Chrome,
         fetch_content: Optional[bool] = True,
         n: Optional[int] = 5,
         force: Optional[bool] = False,
@@ -32,19 +34,24 @@ class PolymarketDataService(BaseDataService):
         local_path = f"./db/news-{event_id}.json"
 
         if force:
-            news = gnews.get_news(question, fetch_content=fetch_content, n=n)
+            news = gnews.get_news(
+                question, driver=driver, fetch_content=fetch_content, n=n
+            )
             print("News (force): ", news)
-            with open(local_path, "w") as fp:
-                json.dump(news, fp)
+            if news:
+                with open(local_path, "w") as fp:
+                    json.dump(news, fp)
 
         else:
             if os.path.exists(local_path):
                 with open(local_path, "r") as fp:
                     news = json.load(fp)
             else:
-                news = gnews.get_news(question, fetch_content=fetch_content, n=n)
-
-                with open(local_path, "w") as fp:
-                    json.dump(news, fp)
+                news = gnews.get_news(
+                    question, driver=driver, fetch_content=fetch_content, n=n
+                )
+                if news:
+                    with open(local_path, "w") as fp:
+                        json.dump(news, fp)
 
         return news
